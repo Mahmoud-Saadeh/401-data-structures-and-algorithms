@@ -7,21 +7,6 @@ public class LinkedList<T> {
   public LinkedList(){
     this.head = null;
     this.size = 0;
-//    insertAtEnd(2);
-  }
-
-  public void insertAtEnd(T value) {
-    Node<T> node = new Node<>(value);
-    if (this.head == null) {
-      this.head = node;
-    } else {
-      Node<T> current = this.head;
-      while (current.getNext() != null) {
-        current = current.getNext();
-      }
-      current.setNext(node);
-    }
-    this.size++;
   }
 
   /**
@@ -76,6 +61,72 @@ public class LinkedList<T> {
     System.out.print("NULL");
     return allValues;
 
+  }
+
+  /**
+   *
+   * @param value to be added at the end of the linkedList
+   */
+  public void append(T value) {
+    Node<T> node = new Node<>(value);
+    if (this.head == null) {
+      this.head = node;
+    } else {
+      Node<T> current = this.head;
+      while (current.getNext() != null) {
+        current = current.getNext();
+      }
+      current.setNext(node);
+    }
+    this.size++;
+  }
+
+  public void insertBefore(T value, T newValue){
+    Node<T> node = new Node<>(newValue);
+
+    boolean valueExists = includes(value);
+
+    if (!valueExists){
+      System.out.println("Value does not exist");
+      return;
+    }
+
+    Node<T> current = head;
+
+    if (current.value == value){
+      node.next = head;
+      head = node;
+      return;
+    }
+
+    Node<T> prevNode = current;
+    while (current.value != value) {
+      prevNode = current;
+      current = current.next;
+    }
+    node.next = current;
+    prevNode.next = node;
+  }
+
+  public void insertAfter(T value, T newValue){
+    Node<T> node = new Node<>(newValue);
+
+    boolean valueExists = includes(value);
+
+    if (!valueExists){
+      System.out.println("Value does not exist");
+      return;
+    }
+
+    Node<T> current = this.head;
+    Node<T> nextNode = current.next;
+
+    while (current.value != value) {
+      current = nextNode;
+      nextNode = nextNode.next;
+    }
+    node.setNext(nextNode);
+    current.setNext(node);
   }
 
   public Node<T> getHead(){

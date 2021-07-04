@@ -12,4 +12,4 @@ Guide.
 | reverseArray        | [reverseArray](challenges/reverseArray/README.md)               | [reverseArray](challenges/reverseArray/reverseArray.java)                      |
 | array-insert-shift  | [array-insert-shift](challenges/array-insert-shift/README.md)   | [array-insert-shift](challenges/array-insert-shift/array-insert-shift.java)    |
 | array-binary-search | [array-binary-search](challenges/array-binary-search/README.md) | [array-binary-search](challenges/array-binary-search/array-binary-search.java) |
-| LinkedList | [LinkedList](challenges/linkedList/README.md) | [linkedList](challenges/linkedList/src/main/java/linkedlist) |
+| LinkedList          | [LinkedList](challenges/linkedList/README.md)                   | [linkedList](challenges/linkedList/src/main/java/linkedlist)                   |

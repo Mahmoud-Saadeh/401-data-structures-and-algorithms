@@ -5,8 +5,8 @@ public class App {
 
     LinkedList<java.io.Serializable> List = new LinkedList<>();
 
-    List.insertAtEnd(6);
-    List.insertAtEnd(5);
+    List.append(6);
+    List.append(5);
 
     List.insert("j");
     List.insert(8);
