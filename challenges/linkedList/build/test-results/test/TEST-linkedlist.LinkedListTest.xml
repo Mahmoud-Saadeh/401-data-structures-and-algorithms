@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="linkedlist.LinkedListTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-07-01T13:49:16" hostname="LTUCSTUDENT-L13" time="0.048">
+<testsuite name="linkedlist.LinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-04T19:04:48" hostname="LTUCSTUDENT-L13" time="0.037">
   <properties/>
-  <testcase name="test the first value in the LinkedList" classname="linkedlist.LinkedListTest" time="0.024"/>
-  <testcase name="test the first value in the LinkedList" classname="linkedlist.LinkedListTest" time="0.02"/>
-  <testcase name="test the insert and includes methods" classname="linkedlist.LinkedListTest" time="0.002"/>
-  <system-out><![CDATA[{ 6 } -> { 44 } -> { 8 } -> { 3 } -> NULL]]></system-out>
+  <testcase name="test the order of the values in the LinkedList for insertAfter" classname="linkedlist.LinkedListTest" time="0.037"/>
+  <system-out><![CDATA[{ 3 } -> { 7 } -> { 7 } -> { 8 } -> { 44 } -> { 5 } -> { 6 } -> { 55 } -> NULL]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
