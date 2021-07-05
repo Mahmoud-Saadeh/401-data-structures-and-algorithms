@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="linkedlist.LinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-04T19:04:48" hostname="LTUCSTUDENT-L13" time="0.037">
+<testsuite name="linkedlist.LinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-05T15:41:19" hostname="LTUCSTUDENT-L13" time="0.033">
   <properties/>
-  <testcase name="test the order of the values in the LinkedList for insertAfter" classname="linkedlist.LinkedListTest" time="0.037"/>
-  <system-out><![CDATA[{ 3 } -> { 7 } -> { 7 } -> { 8 } -> { 44 } -> { 5 } -> { 6 } -> { 55 } -> NULL]]></system-out>
+  <testcase name="kInBetweenList()" classname="linkedlist.LinkedListTest" time="0.033"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

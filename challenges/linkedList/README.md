@@ -1,5 +1,8 @@
 # Challenge 5 Linked List
 
+## Problem Domain
+- try to find other ways to store data effectively by using Linked List
+---
 - [x] Create a Node class
 - [x] Create a Linked List class
 - [x] include a head property
@@ -14,7 +17,7 @@
 - [x] Will return true when finding a value within the linked list that exists
 - [x] Will return false when searching for a value in the linked list that does not exist
 - [x] Can properly return a collection of all the values that exist in the linked list
-
+---
 ## Code Challenge: Class 06
 
 ### Whiteboard table
@@ -29,7 +32,8 @@
 | ![append](imagesCh6/code4.png)         | ![append](imagesCh6/sudoCode4.png)         | ![append](imagesCh6/VCode4.png)         |
 | ![insertBefore](imagesCh6/code5.png)   | ![insertBefore](imagesCh6/sudoCode5.png)   | ![insertBefore](imagesCh6/VCode5.png)   |
 | ![insertAfter](imagesCh6/code6.png)    | ![insertAfter](imagesCh6/sudoCode6.png)    | ![insertAfter](imagesCh6/VCode6.png)    |
-
+| ![kthFromEnd](imagesCh6/code7.png)    | ![kthFromEnd](imagesCh6/sudoCode7.png)    | ![kthFromEnd](imagesCh6/VCode7.png)    |
+---
 1. in the [LinkedList](src/main/java/linkedlist/LinkedList.java) file I have 6 methods:
    - insert: to insert new node at the beginning
    - includes: check if the value exist
@@ -37,6 +41,18 @@
    - append: append a new node to the end
    - insertBefore: insert a new node before a given value
    - insertAfter: insert a new node after a given value
+   - kthFromEnd: return the k th value from the end
+---
+
+1. Methods Approach & Efficiency:
+  - insert: O(1) all cases
+  - includes: O(n)
+  - valuesToString: O(n)
+  - append: O(n) worst case, O(1) best case
+  - insertBefore: O(n) worst case, O(1) best case
+  - insertAfter: O(n) worst case, O(1) best case
+  - kthFromEnd: O(n) worst case, O(1) best case
+---
 1. in the [test](src/test/java/linkedlist/LinkedListTest.java) file I have tests for:
 
 - [x] add a node to the end of the linked list
@@ -45,3 +61,4 @@
 - [x] insert a node before the first node of a linked list
 - [x] insert after a node in the middle of the linked list
 - [x] insert a node after the last node of the linked list
+- [x] test different cases for kthFromEnd method
