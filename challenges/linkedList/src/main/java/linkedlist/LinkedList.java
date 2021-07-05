@@ -78,7 +78,7 @@ public class LinkedList<T> {
       }
       current.setNext(node);
     }
-    this.size++;
+    size++;
   }
 
   public void insertBefore(T value, T newValue){
@@ -96,6 +96,7 @@ public class LinkedList<T> {
     if (current.value == value){
       node.next = head;
       head = node;
+      size++;
       return;
     }
 
@@ -106,6 +107,7 @@ public class LinkedList<T> {
     }
     node.next = current;
     prevNode.next = node;
+    size++;
   }
 
   public void insertAfter(T value, T newValue){
@@ -127,6 +129,30 @@ public class LinkedList<T> {
     }
     node.setNext(nextNode);
     current.setNext(node);
+    size++;
+  }
+
+  public String kthFromEnd(T k){
+    Node<T> current = this.head;
+    int count = 1;
+    int value = 0;
+    if (size < (int) k){
+      return "the value is greater than the length of the list";
+    }
+    if ((int) k < 0){
+      return "Can not enter a negative number";
+    }
+    if (size - (int) k <= 0){
+      return "" + current.value;
+    }
+    while (current != null) {
+      if (size - (int) k == count){
+        value = (int) current.value;
+      }
+      current = current.next;
+      count++;
+    }
+    return "" + value;
   }
 
   public Node<T> getHead(){

@@ -95,4 +95,66 @@ public class LinkedListTest {
 
     Assertions.assertEquals("{ 3 } -> { 7 } -> { 7 } -> { 8 } -> { 44 } -> { 5 } -> { 6 } -> { 55 } -> NULL",testList.valuesToString(), "app should print { 3 } -> { 7 } -> { 7 } -> { 8 } -> { 44 } -> { 5 } -> { 6 } -> { 55 } -> NULL");
   }
+
+  @Test
+  public void kGreaterThanList(){
+    LinkedList<java.io.Serializable> testList = new LinkedList<>();
+
+    testList.append(3);
+    testList.append(8);
+    testList.append(44);
+    testList.append(6);
+
+    Assertions.assertEquals("the value is greater than the length of the list",testList.kthFromEnd(5), "kthFromEnd should print the value is greater than the length of the list");
+
+  }
+
+  @Test
+  public void kEqualList(){
+    LinkedList<java.io.Serializable> testList = new LinkedList<>();
+
+    testList.append(3);
+    testList.append(8);
+    testList.append(44);
+    testList.append(6);
+
+    Assertions.assertEquals("3",testList.kthFromEnd(4), "kthFromEnd should print 3");
+
+  }
+
+  @Test
+  public void kNotPositiveList(){
+    LinkedList<java.io.Serializable> testList = new LinkedList<>();
+
+    testList.append(3);
+    testList.append(8);
+    testList.append(44);
+    testList.append(6);
+
+    Assertions.assertEquals("Can not enter a negative number",testList.kthFromEnd(-3), "kthFromEnd should print Can not enter a negative number");
+  }
+
+  @Test
+  public void ListSizeOne(){
+    LinkedList<java.io.Serializable> testList = new LinkedList<>();
+
+    testList.append(3);
+
+    Assertions.assertEquals("3",testList.kthFromEnd(0), "kthFromEnd should print 3");
+    Assertions.assertEquals("Can not enter a negative number",testList.kthFromEnd(-1), "kthFromEnd should print Can not enter a negative number");
+    Assertions.assertEquals("the value is greater than the length of the list",testList.kthFromEnd(5), "kthFromEnd should print the value is greater than the length of the list");
+
+  }
+
+  @Test
+  public void kInBetweenList(){
+    LinkedList<java.io.Serializable> testList = new LinkedList<>();
+
+    testList.append(3);
+    testList.append(8);
+    testList.append(44);
+    testList.append(6);
+
+    Assertions.assertEquals("44",testList.kthFromEnd(1), "kthFromEnd should print 44");
+  }
 }
