@@ -33,6 +33,8 @@
 | ![insertBefore](imagesCh6/code5.png)   | ![insertBefore](imagesCh6/sudoCode5.png)   | ![insertBefore](imagesCh6/VCode5.png)   |
 | ![insertAfter](imagesCh6/code6.png)    | ![insertAfter](imagesCh6/sudoCode6.png)    | ![insertAfter](imagesCh6/VCode6.png)    |
 | ![kthFromEnd](imagesCh6/code7.png)    | ![kthFromEnd](imagesCh6/sudoCode7.png)    | ![kthFromEnd](imagesCh6/VCode7.png)    |
+| ![reverse](imagesCh6/code8.png)    | ![reverse](imagesCh6/sudoCode8.png)    | ![reverse](imagesCh6/VCode8.gif)    |
+| ![zipLists](imagesCh6/code9.png)    | ![zipLists](imagesCh6/sudoCode9.png)    | ![zipLists](imagesCh6/VCode9.png)    |
 ---
 1. in the [LinkedList](src/main/java/linkedlist/LinkedList.java) file I have 6 methods:
    - insert: to insert new node at the beginning
@@ -42,6 +44,8 @@
    - insertBefore: insert a new node before a given value
    - insertAfter: insert a new node after a given value
    - kthFromEnd: return the k th value from the end
+   - reverse: reverse the linked list
+   - zipLists: Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
 ---
 
 1. Methods Approach & Efficiency:
@@ -52,6 +56,8 @@
   - insertBefore: O(n) worst case, O(1) best case
   - insertAfter: O(n) worst case, O(1) best case
   - kthFromEnd: O(n) worst case, O(1) best case
+  - reverse: O(n)
+  - zipLists: O(n): I used a while loop O(n) and inside it, I used the insert method O(1) and outside the loop I used the reverse method
 ---
 1. in the [test](src/test/java/linkedlist/LinkedListTest.java) file I have tests for:
 
@@ -62,3 +68,5 @@
 - [x] insert after a node in the middle of the linked list
 - [x] insert a node after the last node of the linked list
 - [x] test different cases for kthFromEnd method
+- [x] test reverseTest method
+- [x] test zipLists method

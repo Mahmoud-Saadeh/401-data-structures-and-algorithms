@@ -157,4 +157,35 @@ public class LinkedListTest {
 
     Assertions.assertEquals("44",testList.kthFromEnd(1), "kthFromEnd should print 44");
   }
+
+  @Test
+  public void reverseTest(){
+    LinkedList<java.io.Serializable> testList = new LinkedList<>();
+
+    testList.append(3);
+    testList.append(8);
+    testList.append(44);
+    testList.append(6);
+
+    testList.reverse();
+
+    Assertions.assertEquals("{ 6 } -> { 44 } -> { 8 } -> { 3 } -> NULL",testList.valuesToString(), "reverseTest should print { 6 } -> { 44 } -> { 8 } -> { 3 } -> NULL");
+  }
+
+  @Test
+  public void zipListsTest(){
+    LinkedList<java.io.Serializable> testList = new LinkedList<>();
+
+    testList.append(3);
+    testList.append(8);
+    testList.append(44);
+    testList.append(6);
+
+    LinkedList<java.io.Serializable> testList2 = new LinkedList<>();
+
+    testList2.append(32);
+    testList2.append(82);
+
+    Assertions.assertEquals("{ 3 } -> { 32 } -> { 8 } -> { 82 } -> { 44 } -> { 6 } -> NULL",testList.zipLists(testList,testList2).valuesToString(), "zipListsTest should print { 3 } -> { 32 } -> { 8 } -> { 82 } -> { 44 } -> { 6 } -> NULL");
+  }
 }
