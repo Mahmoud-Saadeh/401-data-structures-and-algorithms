@@ -5,7 +5,7 @@ public class LinkedList<T> {
   private int size;
 
   public LinkedList(){
-    this.head = null;
+    head = null;
     this.size = 0;
   }
 
@@ -19,9 +19,9 @@ public class LinkedList<T> {
 
 
     node.next = this.head;
-    this.head = node;
+    head = node;
 
-    this.size++;
+    size++;
   }
 
   /**
@@ -32,7 +32,7 @@ public class LinkedList<T> {
   public boolean includes(T value) {
 
     //find the head
-    Node<T> current  = this.head;
+    Node<T> current  = head;
 
     //check each node value in the list against input value
     while (current != null) {
@@ -49,7 +49,7 @@ public class LinkedList<T> {
   public String valuesToString(){
 
     //find head
-    Node<T> current = this.head;
+    Node<T> current = head;
     String allValues = "";
     //output all values of the list
     while (current != null) {
@@ -69,10 +69,10 @@ public class LinkedList<T> {
    */
   public void append(T value) {
     Node<T> node = new Node<>(value);
-    if (this.head == null) {
-      this.head = node;
+    if (head == null) {
+      head = node;
     } else {
-      Node<T> current = this.head;
+      Node<T> current = head;
       while (current.getNext() != null) {
         current = current.getNext();
       }
@@ -120,7 +120,7 @@ public class LinkedList<T> {
       return;
     }
 
-    Node<T> current = this.head;
+    Node<T> current = head;
     Node<T> nextNode = current.next;
 
     while (current.value != value) {
@@ -133,7 +133,7 @@ public class LinkedList<T> {
   }
 
   public String kthFromEnd(T k){
-    Node<T> current = this.head;
+    Node<T> current = head;
     int count = 1;
     int value = 0;
     if (size < (int) k){
@@ -155,7 +155,58 @@ public class LinkedList<T> {
     return "" + value;
   }
 
+  /**
+   *
+   * @param list1 a LinkedList
+   * @param list2 a LinkedList
+   * @return return a LinkedList  with the merged values from the two LinkedLists
+   */
+  public LinkedList<T> zipLists(LinkedList<T> list1 , LinkedList<T> list2){
+
+    Node<T> list1Node = list1.head;
+    Node<T> list2Node = list2.head;
+
+    LinkedList<T> mergedList = new LinkedList<>();
+
+    while (list1Node != null || list2Node != null) {
+      if (list1Node != null){
+        mergedList.insert(list1Node.value);
+        list1Node = list1Node.next;
+      }
+      if (list2Node != null){
+        mergedList.insert(list2Node.value);
+        list2Node = list2Node.next;
+      }
+
+    }
+    mergedList.reverse();
+    return mergedList;
+  }
+
+  /**
+   * src https://www.geeksforgeeks.org/reverse-a-linked-list/
+   * Function to reverse the linked list
+   */
+  public void reverse() {
+    Node<T>  prev = null;
+    Node<T> current = head;
+    Node<T>  next = null;
+
+    while (current != null) {
+      // Before changing next of current,
+      // store next node
+      next = current.next;
+      // Now change next of current
+      // This is where actual reversing happens
+      current.next = prev;
+      // Move prev and curr one step forward
+      prev = current;
+      current = next;
+    }
+    head = prev;
+  }
+
   public Node<T> getHead(){
-    return this.head;
+    return head;
   }
 }
