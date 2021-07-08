@@ -13,3 +13,5 @@ Guide.
 | array-insert-shift  | [array-insert-shift](challenges/array-insert-shift/README.md)   | [array-insert-shift](challenges/array-insert-shift/array-insert-shift.java)    |
 | array-binary-search | [array-binary-search](challenges/array-binary-search/README.md) | [array-binary-search](challenges/array-binary-search/array-binary-search.java) |
 | LinkedList          | [LinkedList](challenges/linkedList/README.md)                   | [linkedList](challenges/linkedList/src/main/java/linkedlist)                   |
+| Stack          | [Stack](challenges/challenges/StackAndQueue.md)                   | [Stack](challenges/challenges/src/main/java/stackAndQueue/Stack.java)                   |
+| Queue          | [Queue](challenges/challenges/StackAndQueue.md)                   | [Queue](challenges/challenges/src/main/java/stackAndQueue/Queue.java)                   |
