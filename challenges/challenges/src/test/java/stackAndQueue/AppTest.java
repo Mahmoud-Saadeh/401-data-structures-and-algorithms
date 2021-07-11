@@ -144,4 +144,60 @@ public class AppTest {
     assertEquals("peekPopEmptyStack should return The Queue is empty", "The Queue is empty", queue.dequeue());
     assertEquals("peekPopEmptyStack should return The Queue is empty", "The Queue is empty", queue.peek());
   }
+
+
+//////////////////////////////////////////////
+
+  @Test
+  public void enqueueOnePseudoQueue() {
+    PseudoQueue<java.io.Serializable> queue = new PseudoQueue<>();
+
+    queue.enqueue(8);
+
+    assertEquals("pseudoEnqueueOneQueue should return rear -> { 8 } <- front", "rear -> { 8 } <- front", queue.toStringStack1());
+    assertEquals("The size should be 1", 1, queue.size);
+  }
+
+  @Test
+  public void enqueueMultiPseudoQueue() {
+    PseudoQueue<java.io.Serializable> queue = new PseudoQueue<>();
+
+    queue.enqueue(8);
+    queue.enqueue(4);
+    queue.enqueue(7);
+
+    assertEquals("pseudoEnqueueMultiQueue should return rear -> { 7 } <- { 4 } <- { 8 } <- front", "rear -> { 7 } <- { 4 } <- { 8 } <- front", queue.toStringStack1());
+    assertEquals("The size should be 3", 3, queue.size);
+  }
+
+  @Test
+  public void dequeueOnePseudoQueue() {
+    PseudoQueue<java.io.Serializable> queue = new PseudoQueue<>();
+
+    queue.enqueue(8);
+    queue.enqueue(4);
+    queue.enqueue(7);
+
+    queue.dequeue();
+
+    assertEquals("pseudoDequeueOneQueue should return front -> { 4 } -> { 7 } <- rear", "front -> { 4 } -> { 7 } <- rear", queue.toStringStack2());
+    assertEquals("pseudoDequeueOneQueue should return 4", "4", queue.dequeue());
+    assertEquals("The size should be 1", 1, queue.size);
+  }
+
+  @Test
+  public void dequeueMultiPseudoQueue() {
+    PseudoQueue<java.io.Serializable> queue = new PseudoQueue<>();
+
+    queue.enqueue(3);
+    queue.enqueue(2);
+    queue.enqueue(4);
+
+    queue.dequeue();
+    queue.dequeue();
+    queue.dequeue();
+
+    assertEquals("pseudoDequeueMultiQueue should return front -> rear", "front -> rear", queue.toStringStack2());
+    assertEquals("The size should be 0", 0, queue.size);
+  }
 }

@@ -1,7 +1,7 @@
 package stackAndQueue;
 
 public class Stack<T> {
-  private Node<T> top;
+  Node<T> top;
 
 
   public void push(T value){
