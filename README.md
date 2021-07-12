@@ -16,3 +16,4 @@ Guide.
 | Stack          | [Stack](challenges/challenges/StackAndQueue.md)                   | [Stack](challenges/challenges/src/main/java/stackAndQueue/Stack.java)                   |
 | Queue          | [Queue](challenges/challenges/StackAndQueue.md)                   | [Queue](challenges/challenges/src/main/java/stackAndQueue/Queue.java)                   |
 | PseudoQueue          | [PseudoQueue](challenges/challenges/PseudoQueue.md)                   | [PseudoQueue](challenges/challenges/src/main/java/stackAndQueue/PseudoQueue.java)                   |
+| AnimalShelter          | [AnimalShelter](challenges/challenges/AnimalShelter.md)                   | [AnimalShelter](challenges/challenges/src/main/java/stackAndQueue/AnimalShelter.java)                   |
