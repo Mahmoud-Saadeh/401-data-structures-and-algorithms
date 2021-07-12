@@ -3,9 +3,25 @@
  */
 package stackAndQueue;
 
+import stackAndQueue.animals.Cat;
+import stackAndQueue.animals.Dog;
+
 public class App {
 
     public static void main(String[] args) {
+      AnimalShelter shelter = new AnimalShelter();
+
+      shelter.enqueue(new Cat("cat1"));
+      shelter.enqueue(new Dog("dog1"));
+      shelter.enqueue(new Cat("cat2"));
+      shelter.enqueue(new Dog("dog2"));
+
+      System.out.println(shelter.dequeue("cat"));
+      System.out.println(shelter.dequeue("cAt"));
+      System.out.println(shelter.dequeue("doG"));
+      System.out.println(shelter.dequeue("bird"));
+      shelter.getCats();
+      shelter.getDogs();
 //      Stack<java.io.Serializable> stack = new Stack<>();
 //
 //      stack.push(3);
@@ -43,14 +59,14 @@ public class App {
 //      System.out.println(queue.dequeue());
 //      queue.toString();
       System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-      PseudoQueue<java.io.Serializable> pseudoQueue = new PseudoQueue<>();
-
-      pseudoQueue.enqueue(3);
+//      PseudoQueue<java.io.Serializable> pseudoQueue = new PseudoQueue<>();
+//
+//      pseudoQueue.enqueue(3);
 //      pseudoQueue.enqueue(4);
 //      pseudoQueue.enqueue(9);
 //      pseudoQueue.enqueue(90);
 
-      pseudoQueue.toStringStack1();
+//      pseudoQueue.toStringStack1();
 
 //      System.out.println(pseudoQueue.dequeue());
 //      System.out.println(pseudoQueue.dequeue());

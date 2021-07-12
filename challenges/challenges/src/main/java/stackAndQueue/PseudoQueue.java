@@ -1,8 +1,8 @@
 package stackAndQueue;
 
 public class PseudoQueue<T> {
-  Stack<T> stack1 = new Stack<>();;
-  Stack<T> stack2 = new Stack<>();;
+  Stack<T> stack1 = new Stack<>();
+  Stack<T> stack2 = new Stack<>();
   public int size;
 
   public void enqueue(T value){
