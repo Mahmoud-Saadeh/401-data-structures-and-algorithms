@@ -5,23 +5,35 @@ package stackAndQueue;
 
 import stackAndQueue.animals.Cat;
 import stackAndQueue.animals.Dog;
+import stackQueueBrackets.BracketValidation;
 
 public class App {
 
     public static void main(String[] args) {
-      AnimalShelter shelter = new AnimalShelter();
+      BracketValidation bracketValidation = new BracketValidation();
+      System.out.println(bracketValidation.validateBrackets("{}"));
+      System.out.println(bracketValidation.validateBrackets("{}(){}"));
+      System.out.println(bracketValidation.validateBrackets("()[[Extra Characters]]"));
+      System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
+      System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
+      System.out.println(bracketValidation.validateBrackets("{}{Code}[Fellows](())"));
+      System.out.println(bracketValidation.validateBrackets("[({}]"));
+      System.out.println(bracketValidation.validateBrackets("(]("));
+      System.out.println(bracketValidation.validateBrackets("{(})"));
 
-      shelter.enqueue(new Cat("cat1"));
-      shelter.enqueue(new Dog("dog1"));
-      shelter.enqueue(new Cat("cat2"));
-      shelter.enqueue(new Dog("dog2"));
-
-      System.out.println(shelter.dequeue("cat"));
-      System.out.println(shelter.dequeue("cAt"));
-      System.out.println(shelter.dequeue("doG"));
-      System.out.println(shelter.dequeue("bird"));
-      shelter.getCats();
-      shelter.getDogs();
+//      AnimalShelter shelter = new AnimalShelter();
+//
+//      shelter.enqueue(new Cat("cat1"));
+//      shelter.enqueue(new Dog("dog1"));
+//      shelter.enqueue(new Cat("cat2"));
+//      shelter.enqueue(new Dog("dog2"));
+//
+//      System.out.println(shelter.dequeue("cat"));
+//      System.out.println(shelter.dequeue("cAt"));
+//      System.out.println(shelter.dequeue("doG"));
+//      System.out.println(shelter.dequeue("bird"));
+//      shelter.getCats();
+//      shelter.getDogs();
 //      Stack<java.io.Serializable> stack = new Stack<>();
 //
 //      stack.push(3);

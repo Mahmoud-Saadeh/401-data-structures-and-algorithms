@@ -1,14 +1,15 @@
 package stackAndQueue;
 
 public class Stack<T> {
-  Node<T> top;
-
+  public Node<T> top;
+  public int size;
 
   public void push(T value){
     Node<T> node = new Node<>(value);
 
     node.next = top;
     top = node;
+    size++;
   }
 
   public String pop(){
@@ -20,6 +21,7 @@ public class Stack<T> {
     T value = temp.value;
     top = top.next;
     temp.next = null;
+    size--;
     return "" + value;
   }
 

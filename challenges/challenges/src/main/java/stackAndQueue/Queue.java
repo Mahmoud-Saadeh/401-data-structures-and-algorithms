@@ -1,8 +1,9 @@
 package stackAndQueue;
 
 public class Queue<T> {
-  Node<T> front;
-  Node<T> rear;
+  public Node<T> front;
+  public Node<T> rear;
+  public int size;
 
   public void enqueue(T value){
     Node<T> node = new Node<>(value);
@@ -13,6 +14,7 @@ public class Queue<T> {
       rear.next = node;
     }
     rear = node;
+    size++;
   }
 
   public String dequeue(){
@@ -23,6 +25,7 @@ public class Queue<T> {
     front = front.next;
     String value = "" + temp.value;
     temp.next =null;
+    size--;
     return value;
   }
 
