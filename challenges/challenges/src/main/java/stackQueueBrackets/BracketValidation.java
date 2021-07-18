@@ -8,7 +8,7 @@ public class BracketValidation {
 
   public boolean validateBrackets(String string) {
 
-      Stack<Character> stack = new Stack<>();
+    Stack<Character> stack = new Stack<>();
 
     char[] array = string.toCharArray();
 
@@ -18,10 +18,10 @@ public class BracketValidation {
           stack.push(chr);
         }else if(
           (chr == ')' && stack.peek().equals("(")) ||
-          (chr == ']' && stack.peek().equals("[")) ||
-          (chr == '}' && stack.peek().equals("{"))
+            (chr == ']' && stack.peek().equals("[")) ||
+            (chr == '}' && stack.peek().equals("{"))
         ){
-            stack.pop();
+          stack.pop();
         }
       }
     }
