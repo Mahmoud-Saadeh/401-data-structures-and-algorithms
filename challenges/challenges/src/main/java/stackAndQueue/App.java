@@ -3,6 +3,7 @@
  */
 package stackAndQueue;
 
+import DuckDuckGoose.DuckDuckGooseGame;
 import stackAndQueue.animals.Cat;
 import stackAndQueue.animals.Dog;
 import stackQueueBrackets.BracketValidation;
@@ -10,16 +11,25 @@ import stackQueueBrackets.BracketValidation;
 public class App {
 
     public static void main(String[] args) {
-      BracketValidation bracketValidation = new BracketValidation();
-      System.out.println(bracketValidation.validateBrackets("{}"));
-      System.out.println(bracketValidation.validateBrackets("{}(){}"));
-      System.out.println(bracketValidation.validateBrackets("()[[Extra Characters]]"));
-      System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
-      System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
-      System.out.println(bracketValidation.validateBrackets("{}{Code}[Fellows](())"));
-      System.out.println(bracketValidation.validateBrackets("[({}]"));
-      System.out.println(bracketValidation.validateBrackets("(]("));
-      System.out.println(bracketValidation.validateBrackets("{(})"));
+      DuckDuckGooseGame game = new DuckDuckGooseGame();
+
+      game.addToQueue("A");
+      game.addToQueue("B");
+      game.addToQueue("C");
+      game.addToQueue("D");
+      game.addToQueue("E");
+
+      System.out.println(game.DuckDuckGoose(3));
+//      BracketValidation bracketValidation = new BracketValidation();
+//      System.out.println(bracketValidation.validateBrackets("{}"));
+//      System.out.println(bracketValidation.validateBrackets("{}(){}"));
+//      System.out.println(bracketValidation.validateBrackets("()[[Extra Characters]]"));
+//      System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
+//      System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
+//      System.out.println(bracketValidation.validateBrackets("{}{Code}[Fellows](())"));
+//      System.out.println(bracketValidation.validateBrackets("[({}]"));
+//      System.out.println(bracketValidation.validateBrackets("(]("));
+//      System.out.println(bracketValidation.validateBrackets("{(})"));
 
 //      AnimalShelter shelter = new AnimalShelter();
 //
@@ -35,13 +45,19 @@ public class App {
 //      shelter.getCats();
 //      shelter.getDogs();
 //      Stack<java.io.Serializable> stack = new Stack<>();
-//
+////
 //      stack.push(3);
-//      stack.push(2);
-//      stack.push(1);
+//      stack.push(8);
+//      stack.push(14);
 //      stack.push(0);
-//
-//      System.out.println(stack.isEmpty());
+////
+//      Double h = Double.POSITIVE_INFINITY;
+//      System.out.println(h);
+//      stack.toString();
+//      stack.pop();
+//      stack.pop();
+//      stack.toString();
+//      System.out.println(stack.maxNum);
 //
 //      System.out.println(stack.pop());
 //      System.out.println(stack.pop());
