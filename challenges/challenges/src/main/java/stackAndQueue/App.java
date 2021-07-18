@@ -3,33 +3,61 @@
  */
 package stackAndQueue;
 
+import DuckDuckGoose.DuckDuckGooseGame;
 import stackAndQueue.animals.Cat;
 import stackAndQueue.animals.Dog;
+import stackQueueBrackets.BracketValidation;
 
 public class App {
 
     public static void main(String[] args) {
-      AnimalShelter shelter = new AnimalShelter();
+      DuckDuckGooseGame game = new DuckDuckGooseGame();
 
-      shelter.enqueue(new Cat("cat1"));
-      shelter.enqueue(new Dog("dog1"));
-      shelter.enqueue(new Cat("cat2"));
-      shelter.enqueue(new Dog("dog2"));
+      game.addToQueue("A");
+      game.addToQueue("B");
+      game.addToQueue("C");
+      game.addToQueue("D");
+      game.addToQueue("E");
 
-      System.out.println(shelter.dequeue("cat"));
-      System.out.println(shelter.dequeue("cAt"));
-      System.out.println(shelter.dequeue("doG"));
-      System.out.println(shelter.dequeue("bird"));
-      shelter.getCats();
-      shelter.getDogs();
+      System.out.println(game.DuckDuckGoose(3));
+//      BracketValidation bracketValidation = new BracketValidation();
+//      System.out.println(bracketValidation.validateBrackets("{}"));
+//      System.out.println(bracketValidation.validateBrackets("{}(){}"));
+//      System.out.println(bracketValidation.validateBrackets("()[[Extra Characters]]"));
+//      System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
+//      System.out.println(bracketValidation.validateBrackets("(){}[[]]"));
+//      System.out.println(bracketValidation.validateBrackets("{}{Code}[Fellows](())"));
+//      System.out.println(bracketValidation.validateBrackets("[({}]"));
+//      System.out.println(bracketValidation.validateBrackets("(]("));
+//      System.out.println(bracketValidation.validateBrackets("{(})"));
+
+//      AnimalShelter shelter = new AnimalShelter();
+//
+//      shelter.enqueue(new Cat("cat1"));
+//      shelter.enqueue(new Dog("dog1"));
+//      shelter.enqueue(new Cat("cat2"));
+//      shelter.enqueue(new Dog("dog2"));
+//
+//      System.out.println(shelter.dequeue("cat"));
+//      System.out.println(shelter.dequeue("cAt"));
+//      System.out.println(shelter.dequeue("doG"));
+//      System.out.println(shelter.dequeue("bird"));
+//      shelter.getCats();
+//      shelter.getDogs();
 //      Stack<java.io.Serializable> stack = new Stack<>();
-//
+////
 //      stack.push(3);
-//      stack.push(2);
-//      stack.push(1);
+//      stack.push(8);
+//      stack.push(14);
 //      stack.push(0);
-//
-//      System.out.println(stack.isEmpty());
+////
+//      Double h = Double.POSITIVE_INFINITY;
+//      System.out.println(h);
+//      stack.toString();
+//      stack.pop();
+//      stack.pop();
+//      stack.toString();
+//      System.out.println(stack.maxNum);
 //
 //      System.out.println(stack.pop());
 //      System.out.println(stack.pop());

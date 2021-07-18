@@ -1,14 +1,20 @@
 package stackAndQueue;
 
 public class Stack<T> {
-  Node<T> top;
-
+  public Node<T> top;
+  public int size;
+  public Double maxNum = -Double.POSITIVE_INFINITY;;
 
   public void push(T value){
+    Double valueInt = (Double) value;
     Node<T> node = new Node<>(value);
 
     node.next = top;
     top = node;
+    size++;
+    if (valueInt > maxNum){
+      maxNum =  valueInt;
+    }
   }
 
   public String pop(){
@@ -20,6 +26,11 @@ public class Stack<T> {
     T value = temp.value;
     top = top.next;
     temp.next = null;
+    size--;
+    if ((T) maxNum == temp.value){
+      maxNum = null;
+//      maxNum = (int) -Double.POSITIVE_INFINITY;
+    }
     return "" + value;
   }
 
