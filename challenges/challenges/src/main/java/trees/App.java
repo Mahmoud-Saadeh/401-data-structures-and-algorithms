@@ -22,6 +22,9 @@ public class App {
     System.out.println("postOrder");
     binaryTree.postOrderTraverse(binaryTree.getRoot());
 
+    System.out.println();
+    System.out.println("MAXIMUM >> "+binaryTree.maximum());
+
     // BST
     System.out.println();
     System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");

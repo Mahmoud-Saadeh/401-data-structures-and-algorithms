@@ -68,4 +68,15 @@ public class AppTest {
 
     assertEquals("should return [4, 2, 3, 1]","[4, 2, 3, 1]","" + binaryTree.getPostOrderArr());
   }
+
+  @Test
+  public void testMaximumBinaryTree(){
+    BinaryTree binaryTree = new BinaryTree();
+    binaryTree.setRoot(new Node(6));
+    binaryTree.getRoot().setLeft(new Node(2));
+    binaryTree.getRoot().setRight(new Node(3));
+    binaryTree.getRoot().getLeft().setLeft(new Node(4));
+
+    assertEquals("should return 6","6" , "" + binaryTree.maximum());
+  }
 }
