@@ -8,6 +8,9 @@ Trees are non-linear data structures. They are often used to represent hierarchi
 1. Implement a binary tree
 1. Implement a binary search tree
 
+## Whiteboard Process
+![Trees](./Trees.png)
+
 ## Approach & Efficiency
 1. [Binary Tree](src/main/java/trees/BinaryTree.java)
   - Time
@@ -15,6 +18,9 @@ Trees are non-linear data structures. They are often used to represent hierarchi
     - Searching for a specific node is O(n)
   - Space
     - O(w), where w is the largest width of the tree
+  - Find Maximum method
+    - Time O(n)
+    - Space O(1)
 
 1. [Binary Search Tree](src/main/java/trees/BinarySearchTree.java)
   - Time
@@ -27,6 +33,14 @@ Trees are non-linear data structures. They are often used to represent hierarchi
   - preOrderTraverse: to print the data as root >> left >> right
   - inOrderTraverse: to print the data as left >> root >> right
   - postOrderTraverse: to print the data as left >> right >> root
+  - maximum: to search through the tree and return the max. value
+
 1. in [Binary Search Tree](src/main/java/trees/BinarySearchTree.java) I extended the Binary Tree class and added 2 methods:
   - add => input integer: to add a new node to the tree and if the number was larger than the root go to the right and if smaller go to the left
   - contain => input integer: search the tree if the value exists and return true if it does or false if it doesn't
+
+## Solution
+
+1. maximum
+  - populate the binary tree with some value (only integers)
+  - run the maximum method in the [Binary Tree](src/main/java/trees/BinaryTree.java) class

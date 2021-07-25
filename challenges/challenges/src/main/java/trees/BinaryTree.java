@@ -7,6 +7,7 @@ public class BinaryTree {
   public ArrayList<Integer> preOrderArr = new ArrayList<>();
   public ArrayList<Integer> inOrderArr = new ArrayList<>();
   public ArrayList<Integer> postOrderArr = new ArrayList<>();
+  public Integer maxValue;
 
   public void preOrderTraverse(Node node) {
     if (root == null) {
@@ -44,12 +45,21 @@ public class BinaryTree {
       return;
     }
     if (node != null) {
+      if (maxValue == null || maxValue < node.getKey()){
+        maxValue = node.getKey();
+      }
       postOrderTraverse(node.getLeft());
       postOrderTraverse(node.getRight());
 
       System.out.print(node.getKey() + " ");
       postOrderArr.add(node.getKey());
     }
+  }
+
+  public Integer maximum(){
+    Node node = root;
+    postOrderTraverse(node);
+    return maxValue;
   }
 
   public void setRoot(Node root) {
