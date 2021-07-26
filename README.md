@@ -18,4 +18,4 @@ Guide.
 | PseudoQueue          | [PseudoQueue](challenges/challenges/PseudoQueue.md)                   | [PseudoQueue](challenges/challenges/src/main/java/stackAndQueue/PseudoQueue.java)                   |
 | AnimalShelter          | [AnimalShelter](challenges/challenges/AnimalShelter.md)                   | [AnimalShelter](challenges/challenges/src/main/java/stackAndQueue/AnimalShelter.java)                   |
 | BracketValidation          | [BracketValidation](challenges/challenges/validateBrackets.md)                   | [BracketValidation](challenges/challenges/src/main/java/stackQueueBrackets/BracketValidation.java)                   |
-| Trees          | [Trees](challenges/challenges/Trees.md)                   | [Trees](challenges/challenges/src/main/java/trees)                   |
+| Trees          | [Trees](challenges/trees/Trees.md)                   | [Trees](challenges/trees/src/main/java)                   |

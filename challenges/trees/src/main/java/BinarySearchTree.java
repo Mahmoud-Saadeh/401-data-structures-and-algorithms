@@ -1,5 +1,3 @@
-package trees;
-
 public class BinarySearchTree extends BinaryTree {
 
   public void add(int value) {

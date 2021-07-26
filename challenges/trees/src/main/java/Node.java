@@ -1,5 +1,3 @@
-package trees;
-
 public class Node {
   private final int key;
   private Node left;
