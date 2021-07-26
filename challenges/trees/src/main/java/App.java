@@ -1,5 +1,3 @@
-package trees;
-
 public class App {
   public static void main(String[] args) {
     BinaryTree binaryTree = new BinaryTree();
@@ -9,6 +7,7 @@ public class App {
     binaryTree.getRoot().setLeft(new Node(2));
     binaryTree.getRoot().setRight(new Node(3));
     binaryTree.getRoot().getLeft().setLeft(new Node(4));
+    binaryTree.getRoot().getLeft().setRight(new Node(8));
 
     System.out.println();
     System.out.println("preOrder");

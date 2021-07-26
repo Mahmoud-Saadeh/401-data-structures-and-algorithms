@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-07-26T17:47:02" hostname="LTUCSTUDENT-L13" time="0.029">
+  <properties/>
+  <testcase name="instantiateATree0neNode" classname="AppTest" time="0.005"/>
+  <testcase name="inorderTraversal" classname="AppTest" time="0.02"/>
+  <testcase name="preorderTraversal" classname="AppTest" time="0.001"/>
+  <testcase name="instantiateAnEmptyTree" classname="AppTest" time="0.001"/>
+  <testcase name="testMaximumBinaryTree" classname="AppTest" time="0.001"/>
+  <testcase name="rootAndLeftAndRight" classname="AppTest" time="0.001"/>
+  <testcase name="postorderTraversal" classname="AppTest" time="0.0"/>
+  <system-out><![CDATA[4 2 1 3 1 2 4 3 4 2 3 6 4 2 3 1 ]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
