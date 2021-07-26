@@ -5,6 +5,7 @@ public class BinaryTree {
   public ArrayList<Integer> preOrderArr = new ArrayList<>();
   public ArrayList<Integer> inOrderArr = new ArrayList<>();
   public ArrayList<Integer> postOrderArr = new ArrayList<>();
+  public ArrayList<Integer> breadthArr = new ArrayList<>();
   public Integer maxValue;
 
   public void preOrderTraverse(Node node) {
@@ -52,6 +53,25 @@ public class BinaryTree {
       System.out.print(node.getKey() + " ");
       postOrderArr.add(node.getKey());
     }
+  }
+
+  public ArrayList<Integer> breadthFirst(BinaryTree tree){
+    Queue breadth = new Queue();
+    breadth.enqueue(tree.getRoot());
+
+    while (!breadth.isEmpty()){
+      Node front = breadth.dequeue();
+      breadthArr.add(front.getKey());
+
+      if (front.getLeft() != null){
+        breadth.enqueue(front.getLeft());
+      }
+      if (front.getRight() != null){
+        breadth.enqueue(front.getRight());
+      }
+    }
+
+    return breadthArr;
   }
 
   public Integer maximum(){

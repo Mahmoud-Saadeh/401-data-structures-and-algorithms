@@ -78,4 +78,20 @@ public class AppTest {
 
     assertEquals("should return 6","6" , "" + binaryTree.maximum());
   }
+
+  @Test
+  public  void  testBreadthFirst(){
+    BinaryTree binaryTree = new BinaryTree();
+
+    // adds nodes to the tree
+    binaryTree.setRoot(new Node(1));
+    binaryTree.getRoot().setLeft(new Node(2));
+    binaryTree.getRoot().setRight(new Node(3));
+    binaryTree.getRoot().getRight().setLeft(new Node(10));
+    binaryTree.getRoot().getRight().setRight(new Node(41));
+    binaryTree.getRoot().getLeft().setLeft(new Node(4));
+    binaryTree.getRoot().getLeft().setRight(new Node(8));
+
+    assertEquals("should return [1, 2, 3, 4, 8, 10, 41]","[1, 2, 3, 4, 8, 10, 41]","" + binaryTree.breadthFirst(binaryTree));
+  }
 }

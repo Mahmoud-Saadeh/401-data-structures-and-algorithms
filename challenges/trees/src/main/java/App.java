@@ -6,8 +6,13 @@ public class App {
     binaryTree.setRoot(new Node(1));
     binaryTree.getRoot().setLeft(new Node(2));
     binaryTree.getRoot().setRight(new Node(3));
+    binaryTree.getRoot().getRight().setLeft(new Node(10));
+    binaryTree.getRoot().getRight().setRight(new Node(41));
     binaryTree.getRoot().getLeft().setLeft(new Node(4));
     binaryTree.getRoot().getLeft().setRight(new Node(8));
+
+    System.out.println();
+    System.out.println("breadth first " + binaryTree.breadthFirst(binaryTree));
 
     System.out.println();
     System.out.println("preOrder");
@@ -41,6 +46,7 @@ public class App {
     binarySearchTree.add(105);
 
     System.out.println(binarySearchTree.contain(23));
+    System.out.println(binarySearchTree.breadthFirst(binarySearchTree));
 
 
 //    System.out.println();
