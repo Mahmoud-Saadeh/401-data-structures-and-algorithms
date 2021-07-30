@@ -1,12 +1,12 @@
 Node.java
  Node
-BinarySearchTree.java
- BinarySearchTree
-BinaryTree.java
- BinaryTree
 NodeQueue.java
  NodeQueue
 Queue.java
  Queue
+BinarySearchTree.java
+ BinarySearchTree
+BinaryTree.java
+ BinaryTree
 App.java
  App
