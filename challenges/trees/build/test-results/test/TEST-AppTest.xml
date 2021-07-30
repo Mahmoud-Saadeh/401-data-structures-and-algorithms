@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-26T18:58:38" hostname="LTUCSTUDENT-L13" time="0.015">
-  <properties/>
-  <testcase name="testBreadthFirst" classname="AppTest" time="0.015"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

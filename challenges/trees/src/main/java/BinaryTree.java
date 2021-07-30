@@ -73,7 +73,6 @@ public class BinaryTree {
 
     return breadthArr;
   }
-
   public int getLeafCount(Node node) {
     if (node == null) {
       return 0;
@@ -91,6 +90,7 @@ public class BinaryTree {
 
     return leavesNumTree1 == leavesNumTree2;
   }
+
 
 
   public Integer maximum(){

@@ -5,14 +5,19 @@ Trees are non-linear data structures. They are often used to represent hierarchi
 
 ## Challenge
 1. Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
-1. Implement a binary tree
-1. Implement a binary search tree
-1. Implement find maximum value
-1. Implement breadth first traverse
+2. Implement a binary tree
+3. Implement a binary search tree
+4. Implement find maximum value
+5. Implement breadth first traverse
+6. Implement a kAryTree
+7. Implement a treeFizzBuzz method
 
 ## Whiteboard Process
+### Binary Tree
 ![Trees](./Trees.png)
 ![breadthFirst](./breadthFirst.png)
+### K-Ary Tree
+![kAryTree](./kAryTree.png)
 
 ## Approach & Efficiency
 1. [Binary Tree](src/main/java/BinaryTree.java)
@@ -33,6 +38,10 @@ Trees are non-linear data structures. They are often used to represent hierarchi
     - insertion and search operations is O(h), or O(height), In a balanced (or “perfect”) tree, the height of the tree is log(n)
   - Space
     - O(1)
+1. [K-Ary Tree](src/main/java/kAryTree/KAryTree.java)
+   - treeFizzBuzz
+     - Time O(n)
+     - Space O(n)
 
 ## API
 1. in [Binary Tree](src/main/java/BinaryTree.java) there are 3 main methods excluding setters and getters
@@ -45,6 +54,11 @@ Trees are non-linear data structures. They are often used to represent hierarchi
 1. in [Binary Search Tree](src/main/java/BinarySearchTree.java) I extended the Binary Tree class and added 2 methods:
   - add => input integer: to add a new node to the tree and if the number was larger than the root go to the right and if smaller go to the left
   - contain => input integer: search the tree if the value exists and return true if it does or false if it doesn't
+1. [K-Ary Tree](src/main/java/kAryTree/KAryTree.java) I have one method
+  - treeFizzBuzz:
+    - replace If the value is divisible by 3, replace the value with “Fizz”
+    - replace If the value is divisible by 5, replace the value with “Buzz”
+    - replace If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
 
 ## Solution
 
@@ -53,3 +67,5 @@ Trees are non-linear data structures. They are often used to represent hierarchi
   - run the maximum method in the [Binary Tree](src/main/java/BinaryTree.java) class
 1. breadthFirst
   - loop through every node in the tree and enqueue the node with its left and right the dequeue the root
+1. treeFizzBuzz:
+  - loop through every node in the tree and replace every number with the required value
