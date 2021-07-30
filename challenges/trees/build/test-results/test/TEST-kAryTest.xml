@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kAryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-07-30T18:56:51" hostname="LTUCSTUDENT-L13" time="0.023">
+  <properties/>
+  <testcase name="kAryTreeThree" classname="kAryTest" time="0.021"/>
+  <testcase name="kAryTreeFour" classname="kAryTest" time="0.002"/>
+  <system-out><![CDATA[3
+3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

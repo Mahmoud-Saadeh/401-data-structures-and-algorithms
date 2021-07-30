@@ -94,4 +94,5 @@ public class AppTest {
 
     assertEquals("should return [1, 2, 3, 4, 8, 10, 41]","[1, 2, 3, 4, 8, 10, 41]","" + binaryTree.breadthFirst(binaryTree));
   }
+
 }
