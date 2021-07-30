@@ -74,6 +74,25 @@ public class BinaryTree {
     return breadthArr;
   }
 
+  public int getLeafCount(Node node) {
+    if (node == null) {
+      return 0;
+    }
+    if (node.getLeft() == null && node.getRight() == null) {
+      return 1;
+    }
+    else {
+      return getLeafCount(node.getLeft()) + getLeafCount(node.getRight());
+    }
+  }
+  public boolean compareTwoTreesLeaves(BinaryTree binaryTree1, BinaryTree binaryTree2){
+    int leavesNumTree1 = binaryTree1.getLeafCount(binaryTree1.getRoot());
+    int leavesNumTree2 = binaryTree1.getLeafCount(binaryTree2.getRoot());
+
+    return leavesNumTree1 == leavesNumTree2;
+  }
+
+
   public Integer maximum(){
     Node node = root;
     postOrderTraverse(node);
