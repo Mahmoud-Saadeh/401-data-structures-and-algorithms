@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa44b9fc-95a4-4d13-9ce8-2d32faa931ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/InsertionSort/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/InsertionSort.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/InsertionSort/InsertionSort.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/pass1.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/InsertionSort/pass1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/pass2.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/InsertionSort/pass2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/pass3.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/InsertionSort/pass3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/pass4.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/InsertionSort/pass4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/pass5.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/InsertionSort/pass5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/pass6.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/InsertionSort/pass6.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,5 +70,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
