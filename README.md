@@ -21,4 +21,5 @@ Guide.
 | Trees          | [Trees](challenges/trees/Trees.md)                   | [Trees](challenges/trees/src/main/java)                   |
 | Insertion Sort          | [Insertion Sort](challenges/blog/InsertionSort/InsertionSort.md)                   | [InsertionSort](challenges/blog/InsertionSort/InsertionSort.java) 
 | Merge Sort          | [Merge Sort](challenges/blog/MergeSort/MergeSort.md)                   | [MergeSort](challenges/blog/MergeSort/MergeSort.java)                   |
+| Quick Sort          | [Quick Sort](challenges/blog/QuickSort/QuickSort.md)                   | [QuickSort](challenges/blog/QuickSort/QuickSort.java)                   |
 
