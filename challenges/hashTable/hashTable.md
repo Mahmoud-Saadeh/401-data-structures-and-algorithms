@@ -22,6 +22,6 @@ The Hashtable class implements a hash table, which maps keys to values. To succe
   - remove:
     - Best case: O(1)
     - Worst case: O(n)
-    - get:
+  - get:
       - Best case: O(1)
       - Worst case: O(n)
