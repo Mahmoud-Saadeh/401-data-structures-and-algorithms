@@ -19,7 +19,8 @@ Guide.
 | AnimalShelter          | [AnimalShelter](challenges/challenges/AnimalShelter.md)                   | [AnimalShelter](challenges/challenges/src/main/java/stackAndQueue/AnimalShelter.java)                   |
 | BracketValidation          | [BracketValidation](challenges/challenges/validateBrackets.md)                   | [BracketValidation](challenges/challenges/src/main/java/stackQueueBrackets/BracketValidation.java)                   |
 | Trees          | [Trees](challenges/trees/Trees.md)                   | [Trees](challenges/trees/src/main/java)                   |
-| Insertion Sort          | [Insertion Sort](challenges/blog/InsertionSort/InsertionSort.md)                   | [InsertionSort](challenges/blog/InsertionSort/InsertionSort.java) 
+| Insertion Sort          | [Insertion Sort](challenges/blog/InsertionSort/InsertionSort.md)                   | [InsertionSort](challenges/blog/InsertionSort/InsertionSort.java)
 | Merge Sort          | [Merge Sort](challenges/blog/MergeSort/MergeSort.md)                   | [MergeSort](challenges/blog/MergeSort/MergeSort.java)                   |
 | Quick Sort          | [Quick Sort](challenges/blog/QuickSort/QuickSort.md)                   | [QuickSort](challenges/blog/QuickSort/QuickSort.java)                   |
+| Hash Table          | [Hash Table](challenges/hashTable/hashTable.md)                   | [Hash Table](challenges/hashTable/src/main/java/hashTable/HashTable.java)                   |
 
