@@ -23,4 +23,5 @@ Guide.
 | Merge Sort          | [Merge Sort](challenges/blog/MergeSort/MergeSort.md)                   | [MergeSort](challenges/blog/MergeSort/MergeSort.java)                   |
 | Quick Sort          | [Quick Sort](challenges/blog/QuickSort/QuickSort.md)                   | [QuickSort](challenges/blog/QuickSort/QuickSort.java)                   |
 | Hash Table          | [Hash Table](challenges/hashTable/hashTable.md)                   | [Hash Table](challenges/hashTable/src/main/java/hashTable/HashTable.java)                   |
+| Repeated Word          | [Repeated Word](challenges/hashMap/RepeatedWord.md)                   | [Repeated Word](challenges/hashMap/src/main/java/App.java)                   |
 
