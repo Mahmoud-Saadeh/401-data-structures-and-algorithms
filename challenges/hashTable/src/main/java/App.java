@@ -10,6 +10,8 @@ public class App {
 
     System.out.println("The size is => " + hashTable.getSize());
     System.out.println("The Sally allowance is => " + hashTable.get("Sally"));
+    System.out.println("Is Sally here => " + hashTable.contains("Sally"));
+    System.out.println("Is Mahmoud here => " + hashTable.contains("Mahmoud"));
     System.out.println("Delete Sally => " + hashTable.remove("Sally"));
     System.out.println("The size is => " + hashTable.getSize());
   }

@@ -155,6 +155,22 @@ public class HashTable<K, V> {
     return head.value;
   }
 
+  public Boolean contains(K key){
+    int bucketIndex = getBucketIndex(key);
+    int hashCode = hashCode(key);
+    HashNode<K, V> head = bucketArray.get(bucketIndex);
+
+    while (head != null) {
+      if (head.key.equals(key) && head.hashCode == hashCode) {
+        return true;
+      }
+
+      head = head.next;
+    }
+    return false;
+
+  }
+
   /**
    *
    * @param key
