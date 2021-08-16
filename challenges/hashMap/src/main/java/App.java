@@ -10,7 +10,7 @@ public class App {
   public String hashmapRepeatedWord(String sentence){
     HashMap<String, Integer> hashMap = new HashMap<>();
 
-    for (String word : sentence.split(" ")){
+    for (String word : sentence.split(" z")){
       if (word.endsWith(",")){
         word = removeLastChar(word);
       }
