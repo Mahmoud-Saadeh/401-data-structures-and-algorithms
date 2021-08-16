@@ -8,7 +8,7 @@ Given a String as input it is required to return the first repeated word in that
 1. Time:
    1. Worst case: O(n) where n is the number of words in the string
    2. Best case: O(1)
-2. Spase:
+2. Space:
    1. Worst case: O(n) where n is the number of words in the string
    2. Best case: O(1)
 
