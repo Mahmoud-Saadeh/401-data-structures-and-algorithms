@@ -62,7 +62,6 @@ public class TreeIntersection {
     App app = new App();
     List<Integer> list2 = app.treeIntersection(binaryTree1,binaryTree3);
 
-    assertTrue(list2.contains(1));
     assertTrue(list2.contains(8));
     assertFalse(list2.contains(41));
     assertFalse(list2.contains(7));

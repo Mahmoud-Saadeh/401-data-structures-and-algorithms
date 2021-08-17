@@ -25,4 +25,5 @@ Guide.
 | Hash Table          | [Hash Table](challenges/hashTable/hashTable.md)                   | [Hash Table](challenges/hashTable/src/main/java/hashTable/HashTable.java)                   |
 | Repeated Word          | [Repeated Word](challenges/hashMap/RepeatedWord.md)                   | [Repeated Word](challenges/hashMap/src/main/java/App.java)                   |
 | Tree Intersection         | [TreeIntersection](challenges/TreeIntersection/TreeIntersection.md)                   | [TreeIntersection](challenges/TreeIntersection/src/main/java/App.java)                   |
+| hashmap-left-join         | [hashmap-left-join](challenges/hashmapLeftJoin/README.md)                   | [hashmap-left-join](challenges/hashmapLeftJoin/src/main/java/App.java)                   |
 
