@@ -12,12 +12,18 @@ public class App {
     synonym.put("diligent", "employed");
     synonym.put("outfit", "garb");
     synonym.put("guide", "usher");
+    synonym.put("a", "1");
+    synonym.put("b", "2");
+    synonym.put("c", "3");
 
     antonym.put("fond", "averse");
     antonym.put("wrath", "delight");
     antonym.put("diligent", "idle");
     antonym.put("guide", "follow");
     antonym.put("flow", "jam");
+    antonym.put("flow2", "jam");
+    antonym.put("flow3", "jam");
+    antonym.put("flow4", "jam");
 
     App app = new App();
 
