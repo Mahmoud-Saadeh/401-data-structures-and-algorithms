@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-22T19:04:06" hostname="LTUCSTUDENT-L13" time="0.046">
+<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-24T06:56:06" hostname="LTUCSTUDENT-L13" time="0.027">
   <properties/>
-  <testcase name="graphBreadthFirst()" classname="AppTest" time="0.046"/>
-  <system-out><![CDATA[[Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]
-]]></system-out>
+  <testcase name="testBusinessTrip()" classname="AppTest" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
