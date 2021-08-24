@@ -28,4 +28,5 @@ Guide.
 | hashmap-left-join         | [hashmap-left-join](challenges/hashmapLeftJoin/README.md)                   | [hashmap-left-join](challenges/hashmapLeftJoin/src/main/java/App.java)                   |
 | Graph + graph-breadth-first          | [Graph](challenges/graph/README.md)                   | [Graph](challenges/graph/src/main/java/graph/Graph.java)                   |
 | graph-business-trip          | [Graph](challenges/graph/BusinessTrip.md)                   | [graph-business-trip](challenges/graph/src/main/java/App.java)                   |
+| graph-depth-first          | [graph-depth-first](challenges/graph/depthFirst.md)                   | [graph-depth-first](challenges/graph/src/main/java/graph/Graph.java)                   |
 
