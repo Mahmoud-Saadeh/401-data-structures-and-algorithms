@@ -27,5 +27,5 @@ Guide.
 | Tree Intersection         | [TreeIntersection](challenges/TreeIntersection/TreeIntersection.md)                   | [TreeIntersection](challenges/TreeIntersection/src/main/java/App.java)                   |
 | hashmap-left-join         | [hashmap-left-join](challenges/hashmapLeftJoin/README.md)                   | [hashmap-left-join](challenges/hashmapLeftJoin/src/main/java/App.java)                   |
 | Graph + graph-breadth-first          | [Graph](challenges/graph/README.md)                   | [Graph](challenges/graph/src/main/java/graph/Graph.java)                   |
-| graph-business-trip          | [Graph](challenges/graph/README.md)                   | [graph-business-trip](challenges/graph/src/main/java/App.java)                   |
+| graph-business-trip          | [Graph](challenges/graph/BusinessTrip.md)                   | [graph-business-trip](challenges/graph/src/main/java/App.java)                   |
 

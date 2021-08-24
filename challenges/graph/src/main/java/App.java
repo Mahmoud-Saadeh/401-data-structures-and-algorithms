@@ -95,7 +95,10 @@ public class App {
     for (Vertex vertex: graph.getNeighbors(city1)) {
       if (Objects.equals(city2, vertex.label)){
         totalCost += vertex.weight;
+        break;
       }
     }
   }
+
+
 }
